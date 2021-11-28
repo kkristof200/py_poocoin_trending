@@ -10,7 +10,7 @@ else:
 
 setuptools.setup(
     name='poocoin_trending',
-    version='0.0.1',
+    version='0.0.2',
     author='Kristóf-Attila Kovács',
     description='poocoin_trending',
     long_description=long_description,

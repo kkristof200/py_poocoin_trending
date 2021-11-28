@@ -41,10 +41,9 @@ class PoocoinTrending(Api):
                 TrendingToken.from_dict(token_d)
                 for token_d in results
             ]
-            print(len(tokens))
 
             if sorting:
-                tokens = sorted(tokens, key=lambda x: x.references if sorting == Sorting.ReferencesAscending else x.visits, reverse=True)
+                tokens = sorted(tokens, key=lambda x: x.references if sorting == Sorting.ReferencesDescending else x.visits, reverse=True)
 
             return tokens
         except Exception as e:
